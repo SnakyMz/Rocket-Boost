@@ -40,11 +40,16 @@ public class Movement : MonoBehaviour
         
         if (rotationInput < 0)
         {
-            transform.Rotate(Vector3.forward * rotationStrength * Time.fixedDeltaTime);
+            ApplyRotation(rotationStrength);
         }
         else if (rotationInput > 0)
         {
-            transform.Rotate(-Vector3.forward * rotationStrength * Time.fixedDeltaTime);
+            ApplyRotation(-rotationStrength);
         }
+    }
+
+    void ApplyRotation(float rotationThisFrame)
+    {
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
     }
 }
