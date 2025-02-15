@@ -20,8 +20,13 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             default:
-                SceneManager.LoadScene(0);
+                ReloadLevel();
                 break;
+        }
+
+        void ReloadLevel()
+        {
+            SceneManager.LoadScene(0);
         }
     }
 }
