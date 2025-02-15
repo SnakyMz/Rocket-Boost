@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             default:
-                Debug.Log("Boom!");
+                SceneManager.LoadScene(0);
                 break;
         }
     }
