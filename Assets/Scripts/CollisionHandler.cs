@@ -40,6 +40,7 @@ public class CollisionHandler : MonoBehaviour
     void StartSuccessSequence()
     {
         isControllable = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(missionSuccess);
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
@@ -48,6 +49,7 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {
         isControllable = false;
+        audioSource.Stop();
         audioSource.PlayOneShot(deathExplosion);
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
