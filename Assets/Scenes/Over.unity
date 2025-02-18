@@ -934,6 +934,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5605580557979780352, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: engineThrust
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a4ef20a91774984392da40ee6e22ffc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -960,8 +964,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6a4ef20a91774984392da40ee6e22ffc, type: 3}
-  m_Resource: {fileID: 8300000, guid: 6a4ef20a91774984392da40ee6e22ffc, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
@@ -1059,6 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c73da05588dce54bba3c82c87a3a0dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
