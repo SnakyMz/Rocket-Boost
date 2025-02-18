@@ -1065,6 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoadDelay: 2
   deathExplosion: {fileID: 8300000, guid: 24641a3c852feb146b3d225695ffec51, type: 3}
+  missionSuccess: {fileID: 8300000, guid: 0a5db866d9f431349af4d482b433bd19, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

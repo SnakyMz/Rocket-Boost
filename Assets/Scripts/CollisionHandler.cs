@@ -6,6 +6,7 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] AudioClip deathExplosion;
+    [SerializeField] AudioClip missionSuccess;
 
     AudioSource audioSource;
 
@@ -34,6 +35,7 @@ public class CollisionHandler : MonoBehaviour
 
     void StartSuccessSequence()
     {
+        audioSource.PlayOneShot(missionSuccess);
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
