@@ -922,11 +922,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 4207944133204101825, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: crashSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 24641a3c852feb146b3d225695ffec51, type: 3}
+    - target: {fileID: 4207944133204101825, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: sucessSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a5db866d9f431349af4d482b433bd19, type: 3}
+    - target: {fileID: 4207944133204101825, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: crashParticle
+      value: 
+      objectReference: {fileID: 8791770938041145848}
+    - target: {fileID: 4207944133204101825, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: successParticle
+      value: 
+      objectReference: {fileID: 8791770938041145847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+--- !u!198 &8791770938041145847 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5051188554508578743, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+  m_PrefabInstance: {fileID: 8791770938041145846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8791770938041145848 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6002884352989624627, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+  m_PrefabInstance: {fileID: 8791770938041145846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
