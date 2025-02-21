@@ -42,10 +42,15 @@ public class Movement : MonoBehaviour
             {
                 audioSource.PlayOneShot(mainEngineSFX);
             }
+            if (!mainEngineParticles.isPlaying)
+            {
+                mainEngineParticles.Play();
+            }
         }
         else
         {
             audioSource.Stop();
+            mainEngineParticles.Stop();
         }
     }
 
@@ -56,10 +61,25 @@ public class Movement : MonoBehaviour
         if (rotationInput < 0)
         {
             ApplyRotation(rotationStrength);
+            if (!rightEngineParticles.isPlaying)
+            {
+                leftEngineParticles.Stop();
+                rightEngineParticles.Play();
+            }
         }
         else if (rotationInput > 0)
         {
             ApplyRotation(-rotationStrength);
+            if (!leftEngineParticles.isPlaying)
+            {
+                rightEngineParticles.Stop();
+                leftEngineParticles.Play();
+            }
+        }
+        else
+        {
+            leftEngineParticles.Stop();
+            rightEngineParticles.Stop();
         }
     }
 
