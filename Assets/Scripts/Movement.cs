@@ -41,8 +41,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            audioSource.Stop();
-            mainEngineParticles.Stop();
+            StopThrusting();
         }
     }
 
@@ -57,6 +56,12 @@ public class Movement : MonoBehaviour
         {
             mainEngineParticles.Play();
         }
+    }
+
+    void StopThrusting()
+    {
+        audioSource.Stop();
+        mainEngineParticles.Stop();
     }
 
     void ProcessRotation()
