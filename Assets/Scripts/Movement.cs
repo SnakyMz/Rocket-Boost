@@ -74,12 +74,7 @@ public class Movement : MonoBehaviour
         }
         else if (rotationInput > 0)
         {
-            ApplyRotation(-rotationStrength);
-            if (!leftEngineParticles.isPlaying)
-            {
-                rightEngineParticles.Stop();
-                leftEngineParticles.Play();
-            }
+            RotateLeft();
         }
         else
         {
@@ -95,6 +90,16 @@ public class Movement : MonoBehaviour
         {
             leftEngineParticles.Stop();
             rightEngineParticles.Play();
+        }
+    }
+
+    void RotateLeft()
+    {
+        ApplyRotation(-rotationStrength);
+        if (!leftEngineParticles.isPlaying)
+        {
+            rightEngineParticles.Stop();
+            leftEngineParticles.Play();
         }
     }
 
