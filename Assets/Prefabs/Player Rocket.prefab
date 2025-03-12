@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6386767934639323268}
   - component: {fileID: 5605580557979780352}
   - component: {fileID: 4207944133204101825}
+  - component: {fileID: 1770325300681288888}
   m_Layer: 0
   m_Name: Player Rocket
   m_TagString: Player
@@ -306,6 +307,35 @@ MonoBehaviour:
   sucessSFX: {fileID: 8300000, guid: 0a5db866d9f431349af4d482b433bd19, type: 3}
   crashParticle: {fileID: 6002884352989624627}
   successParticle: {fileID: 5051188554508578743}
+--- !u!114 &1770325300681288888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038030916883907401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf7743d523632844944ba3006ee34a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exit:
+    m_Name: Exit
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 24f06d26-ce82-4b77-8654-90cd440e630c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f0da96f2-ece2-46a4-9276-ac426f6126af
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Exit
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &6767887489512816965
 GameObject:
   m_ObjectHideFlags: 0
