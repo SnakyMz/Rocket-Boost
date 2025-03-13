@@ -1325,6 +1325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2233524579655318652, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4038030916883907401, guid: e4ad8fa214dc9c8489ca11762c51677d, type: 3}
       propertyPath: m_Name
       value: Player Rocket
