@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Colour_Palette2_Sci_Fi
-    second: {fileID: -6141262742250102974, guid: 981dc53f9c78ccd4eb6a545f083bc814, type: 3}
+    second: {fileID: 2100000, guid: f0931f675414e2b41b3e25435060f075, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sci_Fi_Emission
-    second: {fileID: 8443986690989818273, guid: 266abda2514f6d14e94e942dbc17504a, type: 3}
+    second: {fileID: 2100000, guid: 7fa29b4620b0fbb4eac302ac4a63837a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
